@@ -1,6 +1,6 @@
 #Dol配置实验
 ###一、Dol框架描述
-    **The distributed operation layer (DOL)** is a software development framework to program parallel applications. The DOL allows to specify applications based on the Kahn process network model of computation and features a simulation engine based on SystemC. Moreover, the DOL provides an XML-based specification format to describe the implementation of a parallel application on a multi-processor systems, including binding and mapping. The DOL consists of basically three parts: 
+ **The distributed operation layer (DOL)** is a software development framework to program parallel applications. The DOL allows to specify applications based on the Kahn process network model of computation and features a simulation engine based on SystemC. Moreover, the DOL provides an XML-based specification format to describe the implementation of a parallel application on a multi-processor systems, including binding and mapping. The DOL consists of basically three parts: 
 - **DOL Application Programming Interface**: The DOL defines a set of computation and communication routines that enable the programming of distributed, parallel applications for the SHAPES platform. Using these routines, application programmers can write programs without having detailed knowledge about the underlying architecture. In fact, these routines are subject to further refinement in the hardware dependent software (HdS) layer.  
 - **DOL Functional Simulation**: To provide programmers a possibility to test their applications, a functional simulation framework has been developed. Besides functional verification of applications, this framework is used to obtain performance parameters at the application level.  
 - **DOL Mapping Optimization**: The goal of the DOL mapping optimization is to compute a set of optimal mappings of an application onto the SHAPES architecture platform. In a first step, XML based specification formats have been defined that allow to describe the application and the architecture at an abstract level. Still, all the information necessary to obtain accurate performance estimates is contained. 
@@ -40,14 +40,16 @@
 - 进入该文件夹objdir
 `$	cd objdir`
 - 运行configure(能根据系统的环境设置一下参数，用于编译)，得到以下结果图
-`$	../configure CXX=g++ --disable-async-updates`
+
 ![Alt text|center](./systemc.png)
 - 编译
 `$	sudo make install`
 编译完成后，得到以下目录
+
 ![Alt text|center](./system result.png)
 
 - 输入pwd，记下当前工作路径
+
 ![Alt text|center](./route.png)
 
 
