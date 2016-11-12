@@ -2,6 +2,7 @@
 ###1.  安装
 ####1.1  配置Ubuntu的软件库
 - 配置Ubuntu的软件库，允许"restricted," "universe," and "multiverse." 
+
 ####1.2  设置sources.list
 - 执行以下语句对Ubuntu进行设置，使电脑能够从packages.ros.org下载软件
 
@@ -17,6 +18,7 @@
 `sudo apt-get update`
 
 - ROS有不同的库和工具，这里提供了四种默认配置。
+
 （1） Desktop-Full Install: (Recommended) : ROS, rqt, rviz, robot-generic libraries, 2D/3D simulators, navigation and 2D/3D perception 
 
 `sudo apt-get install ros-jade-desktop-full`
@@ -59,6 +61,7 @@ source ~/.bashrc```
 roscore是在使用ros之前应该首先运行的程序。在终端运行roscore。
 
 `roscore`
+
 运行结果如下：
 
 ![Alt text|center|350*0](./roscore.png)
